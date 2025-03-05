@@ -1,9 +1,8 @@
 'use client';
-import css from './header.module.scss';
-import {Select} from 'antd';
 import {usePathname, useRouter} from 'next/navigation';
 import {useCallback, useMemo} from 'react';
 import {useTranslation} from 'react-i18next';
+import LeftMenuComponent from './left-menu/left-menu.component';
 
 const HeaderComponent = () => {
     const {t} = useTranslation();
@@ -24,15 +23,8 @@ const HeaderComponent = () => {
 
 
     return (
-        <header className={css.header}>
-            {t('rights')}
-            <div className='container'>
-                <Select onChange={onLanguageChange} defaultValue={locale} options={[
-                    {label: 'Az', value: 'az'},
-                    {label: 'En', value: 'en'},
-                    {label: 'Ru', value: 'ru'},
-                ]}/>
-            </div>
+        <header >
+        <LeftMenuComponent/>
         </header>
     );
 };

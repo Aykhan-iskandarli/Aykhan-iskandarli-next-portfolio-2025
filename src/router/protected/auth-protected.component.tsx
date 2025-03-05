@@ -32,7 +32,7 @@ const AuthProtectedComponent = ({children}: IAuthProtectedRouteProps) => {
                 else setChildNode(children);
                 break;
             case 'public':
-                if (token) setChildNode(<PublicLayout>{children}</PublicLayout>);
+                if (!token) setChildNode(<PublicLayout>{children}</PublicLayout>);
                 else setChildNode(<Navigate replace to={Routes.auth}/>);
                 break;
             default:

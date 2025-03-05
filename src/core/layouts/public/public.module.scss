@@ -1,0 +1,13 @@
+@import '@/assets/styles/abstracts/index.scss';
+
+$content-margin-left: 250px; // Rastgele bir değer
+$min-height: calc(100vh - 50px);
+$padding-top: 110px;
+$padding-horizontal: 20px;
+$padding-bottom: 0;
+
+.content {
+  margin-left: $content-margin-left;
+  min-height: $min-height !important;
+  transition: all 0.3s ease;
+}

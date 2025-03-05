@@ -8,10 +8,10 @@ const Home = async ({params: {locale}}: {params: {locale: ILang}}) => {
     const {t} = await useServerTranslation(locale);
   return (
     <main className={styles.main}>
-        <p>
-            {t('rights')}
-        </p>
-      {/*<a href='/src/assets/fonts/Nunito/NunitoSans-Black.ttf'>{translate.rights}</a>*/}
+<p>homedsaddddddddddddhomedsaddddddddddddhomedsaddddddddddddhomedsadddddddddddd</p>
+<p>homedsaddddddddddddhomedsaddddddddddddhomedsaddddddddddddhomedsadddddddddddd</p>
+<p>homedsaddddddddddddhomedsaddddddddddddhomedsaddddddddddddhomedsadddddddddddd</p>
+<p>homedsaddddddddddddhomedsaddddddddddddhomedsaddddddddddddhomedsadddddddddddd</p>
     </main>
   );
 };
